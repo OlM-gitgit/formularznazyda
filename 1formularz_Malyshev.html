@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Malyshev Oleksii">
+    <meta name="description" content="Formularz zgłoszeniowy na pracownika - Oleksii Malyshev">
+    <title>Formularz zgłoszeniowy na pracownika</title>
+</head>
+<body bgcolor="#FFFF00" text="black" style="font-family: Arial, sans-serif; padding: 20px;">
+
+    <form action="mailto:mkryniew@ids.gda.pl?subject=Malyshev" method="post" enctype="text/plain">
+
+        <table border="0" width="100%" cellpadding="10" cellspacing="0">
+            <tr>
+                <!-- LEWA KOLUMNA -->
+                <td width="50%" valign="top">
+                    
+                    <h1>FORMULARZ zgłoszeniowy na pracownika</h1>
+                    <br>
+
+                    <label>IMIĘ</label> <input type="text" name="imie"><br><br>
+                    <label>DRUGIE IMIĘ</label> <input type="text" name="drugie_imie"><br><br>
+                    <label>NAZWISKO</label> <input type="text" name="nazwisko"><br><br>
+                    <label>E-MAIL</label> <input type="text" name="email"><br><br>
+                    
+                    <h3>Adres Zamieszkania:</h3>
+                    <label>Miasto</label> <input type="text" name="miasto"><br><br>
+                    <label>Województwo</label> <input type="text" name="wojewodztwo"><br><br>
+
+                    <h3>Transport do pracy:</h3>
+                    <label>Auto</label> <input type="number" name="transport_auto" min="0" max="10" style="width: 50px;"><br><br>
+                    <label>Tramwaj</label> <input type="number" name="transport_tramwaj" min="0" max="10" style="width: 50px;"><br><br>
+                    <label>Pociąg</label> <input type="number" name="transport_pociag" min="0" max="10" style="width: 50px;"><br><br>
+
+                    <h3>Co zazwyczaj robisz po pracy?</h3>
+                    <input type="checkbox" name="po_pracy_uzywki" value="tak"> Używki<br>
+                    <input type="checkbox" name="po_pracy_trening" value="tak"> Trening<br>
+                    <input type="checkbox" name="po_pracy_gotowanie" value="tak"> Gotowanie<br>
+                    <input type="checkbox" name="po_pracy_inne" value="tak"> Inne<br>
+
+                </td>
+
+                <!-- PRAWA KOLUMNA -->
+                <td width="50%" valign="top">
+                    <br><br><br><br>
+
+                    <h3>Kursy dodatkowe:</h3>
+                    <input type="checkbox" name="kursy_tak" value="tak"> TAK<br>
+                    <input type="checkbox" name="kursy_nie" value="tak"> NIE<br>
+                    
+                    <h3>Dodatkowe informacje o tobie</h3>
+                    <textarea name="dodatkowe_informacje" rows="8" cols="45" style="resize: none;"></textarea><br><br>
+
+                    <h3>Jak oceniasz swoje chęci do pracy</h3>
+                    <div style="width: 300px;">
+                        <input type="range" name="checi_do_pracy" min="0" max="100" step="25" style="width: 100%;"><br>
+                        <table border="0" width="100%" style="font-size: 12px; text-align: center;">
+                            <tr>
+                                <td width="20%">0%</td>
+                                <td width="20%">25%</td>
+                                <td width="20%">50%</td>
+                                <td width="20%">75%</td>
+                                <td width="20%">100%</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+
+        <br><br><br>
+        <p align="center">Kolor tła #FFFF00</p>
+
+        <!-- STOPKA Z PRZYCISKAMI I PODPISEM -->
+        <table border="0" width="100%">
+            <tr>
+                <td align="left" width="70%">
+                    <button type="button" style="padding: 5px 15px;">Zapisz</button>
+                    &nbsp;&nbsp;
+                    <input type="submit" value="Wyślij" style="padding: 5px 15px;">
+                    &nbsp;&nbsp;
+                    <input type="reset" value="Wyczyść" style="padding: 5px 15px;">
+                </td>
+                <td align="right" width="30%" valign="bottom">
+                    <b>Oleksii Malyshev 1P</b>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+</html>
